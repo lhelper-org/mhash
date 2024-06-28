@@ -12,7 +12,7 @@
 #include <mutils/mtypes.h>
 #include <mutils/mutils.h>
 
-#ifdef WIN32
+#if defined(_WIN32) && defined(MHASH_BUILD_SHARED)
 # define WIN32DLL_DEFINE __declspec( dllexport)
 #else
 # define WIN32DLL_DEFINE
